@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>translator</title>
+</head>
+<body>
+    <h1>English to Finnishh translator</h1>
+    <form method="post">
+        <label for="text">Enter word in english</label>
+        <input id="text" name="text" value="{{text}}" required>
+        <button type="submit">Translate</button>
+    </form>
+    {% if result %}
+        <p>{{result}}</p>
+    {% endif %}
+</body>
+</html>
